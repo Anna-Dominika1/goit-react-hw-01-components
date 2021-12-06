@@ -1,0 +1,46 @@
+.title {
+  font-size: 40px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.section_static {
+  margin-top: 50px;
+}
+
+.ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.items {
+  list-style: none;
+  margin-right: 30px;
+  background-color: #50c4f6;
+}
+
+.label {
+  font-size: 25px;
+  text-align: center;
+  color: #fff;
+  margin-top: 5px;
+  margin-right: 6px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.percentage {
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  margin-right: 6px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}

@@ -1,0 +1,57 @@
+.profile {
+  border: 3px solid rgb(161, 161, 161);
+  background-color: #fff;
+
+  border-radius: 3%;
+
+  width: 35pc;
+
+  padding: 15px;
+}
+.avatarp {
+  width: 35pc;
+  border-radius: 50%;
+  background-color: grey;
+  border: 3px solid rgb(161, 161, 161);
+}
+
+.namep {
+  font-size: 40px;
+  text-align: center;
+  color: #000000;
+}
+
+.tagp {
+  font-size: 23px;
+  text-align: center;
+  color: rgb(114, 115, 126);
+}
+
+.locationp {
+  font-size: 27px;
+  text-align: center;
+  color: rgb(114, 115, 126);
+}
+
+.statsp {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.labelp {
+  font-size: 25px;
+  text-align: center;
+  color: rgb(114, 115, 126);
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.quantitp {
+  font-size: 30px;
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+  margin-right: 6px;
+}
