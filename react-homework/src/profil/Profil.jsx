@@ -1,29 +1,30 @@
 import React from "react";
-
+import PropTypes from "prop-types";
+import ProfileStyles from "./profilstyle.module.css";
 const Profile = (props) => {
   const { username, tag, location, avatar, stats } = props;
 
   return (
-    <div className="profile">
-      <div className="description">
-        <img src={avatar} alt="User avatar" className="avatarp" />
-        <p className="namep">{username}</p>
-        <p className="tagp">@{tag}</p>
-        <p className="locationp">{location}</p>
+    <div className={ProfileStyles.profile}>
+      <div className={ProfileStyles.description}>
+        <img src={avatar} alt="User avatar" className={ProfileStyles.avatarp} />
+        <p className={ProfileStyles.namep}>{username}</p>
+        <p className={ProfileStyles.tagp}>@{tag}</p>
+        <p className={ProfileStyles.locationp}>{location}</p>
       </div>
 
-      <ul className="statsp">
+      <ul className={ProfileStyles.statsp}>
         <li>
-          <span className="labelp">Followers</span>
-          <span className="quantitp">{stats.followers}</span>
+          <span className={ProfileStyles.labelp}>Followers</span>
+          <span className={ProfileStyles.quantitp}>{stats.followers}</span>
         </li>
         <li>
-          <span className="labelp">Views</span>
-          <span className="quantitp">{stats.views}</span>
+          <span className={ProfileStyles.labelp}>Views</span>
+          <span className={ProfileStyles.quantitp}>{stats.views}</span>
         </li>
         <li>
-          <span className="labelp">Likes</span>
-          <span className="quantitp">{stats.likes}</span>
+          <span className={ProfileStyles.labelp}>Likes</span>
+          <span className={ProfileStyles.quantitp}>{stats.likes}</span>
         </li>
       </ul>
     </div>
@@ -31,3 +32,11 @@ const Profile = (props) => {
 };
 
 export default Profile;
+
+Profile.propTypes = {
+  avatar: PropTypes.string,
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  stats: PropTypes.object.isRequired,
+};

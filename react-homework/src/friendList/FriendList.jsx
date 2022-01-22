@@ -1,25 +1,19 @@
 import React from "react";
-const FriendListItem = ({ a }) => {
-  const { name, avatar, isOnline } = a;
-
-  return (
-    <li className="item">
-      <span className={isOnline ? "true" : "false"}>
-        {isOnline ? "online" : "ofline"}
-      </span>
-      <img className="avatar" src={avatar} alt="User avatar" width="48" />
-      <p className="name">{name}</p>
-    </li>
-  );
-};
+import FriendListItem from "../FriendListItem/FriendListItem";
+import PropTypes from "prop-types";
+import friendsStyles from "./friendListItem.module.css";
 const FriendList = ({ friends }) => {
   return (
-    <ul className="ul_wrapper">
+    <ul className={friendsStyles.ul_wrapper}>
       {friends.map((prop) => (
-        <FriendListItem a={prop} key={prop.id} />
+        <FriendListItem props={prop} key={prop.id} />
       ))}
     </ul>
   );
 };
 
 export default FriendList;
+
+FriendList.propTypes = {
+  friends: PropTypes.array.isRequired,
+};
