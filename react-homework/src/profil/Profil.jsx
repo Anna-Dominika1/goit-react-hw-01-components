@@ -31,6 +31,13 @@ const Profile = (props) => {
   );
 };
 
+Profile.defaultProps = {
+  avatar:
+    "https://scontent-frt3-1.cdninstagram.com/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=scontent-frt3-1.cdninstagram.com&_nc_cat=1&_nc_ohc=dgCF0utHY-wAX9vvQku&edm=ABmJApABAAAA&ccb=7-4&ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2-ccb7-4&oh=00_AT8E35fGfy2SkHKncfgC3I-9kAeN-z38PozGq9M8gkrujA&oe=6207180F&_nc_sid=6136e7",
+  tag: "@nickName",
+  location: "Not Found",
+};
+
 export default Profile;
 
 Profile.propTypes = {
